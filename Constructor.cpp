@@ -1,16 +1,21 @@
 #include <iostream>
 using namespace std;
 
-class mahasiswa {
+class Mahasiswa 
+{
     public : 
     int nim;
     string nama;
 
     public:
-    mahasiswa()
+    Mahasiswa()
     {
         nim = 0;
         nama = " ";
-    }
+    };
+    Mahasiswa(int);
+    Mahasiswa(string);
+    Mahasiswa(int iNim, string iNama);
+    void cetak();
 };
 
