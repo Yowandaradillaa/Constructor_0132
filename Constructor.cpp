@@ -13,9 +13,20 @@ class Mahasiswa
         nim = 0;
         nama = " ";
     };
-    Mahasiswa(int);
+    Mahasiswa(int iNim)
+    {
+        nim = iNim;
+    }
     Mahasiswa(string);
-    Mahasiswa(int iNim, string iNama);
-    void cetak();
+    Mahasiswa(int iNim, string iNama)
+    {
+        nim = iNim;
+        nama = iNama;
+    }
+    void Mahasiswa::cetak()
+    {
+        cout << endl << "NIM = " << nim << endl;
+        cout << "Nama = " << nama << endl;
+    }
 };
 
