@@ -19,7 +19,14 @@ class mahasiswa
 
 int mahasiswa::nim = 10;
 
-void mahasiswa::setID()
+void mahasiswa::setID() //metod
 {
     id = ++nim;
+}
+
+void mahasiswa::printAll() //metod
+{
+    cout << "ID = " <<id << endl;
+    cout << "Nama = " << nama << endl;
+    cout << endl;
 }
