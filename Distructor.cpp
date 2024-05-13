@@ -29,3 +29,11 @@ angka::~angka()
     cout << "Alamat array sudah dilepaskan" << endl;
 }
 
+void angka::cetakData()
+{
+    for (int i = 1; i <= panjang;i++)
+    {
+        cout << i << "=";cin >> arr[i];   
+    }
+    cout << endl;
+}
